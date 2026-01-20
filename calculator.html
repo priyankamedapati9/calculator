@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script>
+    function priya(){
+      const ap = Number(document.getElementById('v').value);
+      const uv = Number(document.getElementById('k').value);
+      let jyo = ap + uv;
+      document.getElementById('l').value = jyo;
+    }
+
+    function venni(){
+      const d = Number(document.getElementById('v').value);
+      const l = Number(document.getElementById('k').value);
+      let app = d - l;
+      document.getElementById('l').value = app;
+    }
+
+    function satya(){
+      const y = Number(document.getElementById('v').value);
+      const h = Number(document.getElementById('k').value);
+      let boo = y * h;
+      document.getElementById('l').value = boo;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Priya's Calculator</h1>
+    
+    <input type="number" id="v" placeholder="Enter first number">
+    <input type="number" id="k" placeholder="Enter second number">
+
+    <span class="output-label">Output:</span>
+    <input type="number" id="l" readonly>
+
+    <div>
+      <input type="button" onclick="priya()" value="Addition">
+      <input type="button" onclick="venni()" value="Subtraction">
+      <input type="button" onclick="satya()" value="Multiplication">
+    </div>
+  </div>
+</body>
+</html>
